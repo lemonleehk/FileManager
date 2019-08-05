@@ -11,10 +11,12 @@ import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import java.awt.BorderLayout;
 import javax.swing.JTree;
+import javax.swing.JTable;
 
 public class FileManagerMain {
 
 	private JFrame frame;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -75,6 +77,9 @@ public class FileManagerMain {
 		
 		JTree tree = new JTree();
 		frame.getContentPane().add(tree, BorderLayout.WEST);
+		
+		table = new JTable();
+		frame.getContentPane().add(table, BorderLayout.CENTER);
 	}
 
 }
